@@ -48,7 +48,7 @@ export { deployZIP };
 export { deployFTP };
 
 gulp.task("default", dev);
-//деплой
+//деплой сборки
 gulp.task("deploy", function () {
   return gulp.src("./dist/**/*").pipe(
     deploy({
