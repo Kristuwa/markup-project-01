@@ -1,4 +1,11 @@
-@import "fonts";
-body {
-  background-color: #000000;
-}
+@import "./fonts";
+@import "./utils/mixin";
+@import "./utils/variables";
+@import "./base/normalize";
+@import "./base/reset_styles";
+@import "./components/page-header";
+@import "./components/hero";
+@import "./components/section-collection";
+@import "./components/section-gallery";
+@import "./components/section-contacts";
+@import "./components/footer";

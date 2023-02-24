@@ -1,0 +1,94 @@
+.header {
+  padding-top: 35px;
+  padding-bottom: 26px;
+}
+
+.header.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+}
+.site-nav {
+  margin-left: 266px;
+  display: flex;
+  align-items: center;
+  gap: 65px;
+}
+
+.site-nav__item {
+}
+.site-nav__link {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  color: $accent-color;
+
+  transition: color $time $function-animation;
+}
+
+.site-nav__link:hover,
+.site-nav__link :focus {
+  color: $btn-bg-color-brown;
+}
+
+.icons-list {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+
+  transition: color $time $function-animation;
+}
+
+.icons-button {
+  position: relative;
+  width: 21px;
+  height: 21px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.counter {
+  position: absolute;
+  top: -5px;
+  left: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 13px;
+  height: 13px;
+  background-color: $btn-bg-color-brown;
+  border-radius: 6.5px;
+
+  &__text {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.125;
+  }
+}
+
+.icons-button .button:hover,
+.button:focus {
+  color: $btn-bg-color-grey;
+
+  & svg {
+    fill: inherit;
+  }
+}

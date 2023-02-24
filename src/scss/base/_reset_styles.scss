@@ -1,0 +1,87 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  color: $primary-text-color;
+  background-color: $bg-color;
+
+  font-family: $font-family-primary;
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.container {
+  width: 100%x;
+  min-width: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+@include mobile {
+  .container {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@include tablet {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 768px;
+  }
+}
+
+@include desktop {
+  .container {
+    padding-left: 98px;
+    padding-right: 98px;
+    width: 1366px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.list-style {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
