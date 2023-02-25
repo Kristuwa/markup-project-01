@@ -1,0 +1,73 @@
+.gallery {
+  padding-top: 52px;
+  padding-bottom: 21px;
+  background-image: url("../../img/lines_banner.png"),
+    linear-gradient(
+      to right,
+      $bg-color-primary 34%,
+      $bg-color-secondary 34%,
+      $bg-color-secondary 56%
+    );
+  background-color: $btn-bg-color-brown;
+  background-repeat: no-repeat;
+  background-position: top 0 right 0;
+
+  @include retina {
+    background-image: url("../../img/lines_banner@2x.png"),
+      linear-gradient(
+        to right,
+        $bg-color-primary 34%,
+        $bg-color-secondary 34%,
+        $bg-color-secondary 56%
+      );
+  }
+}
+
+.container-gallery {
+  display: flex;
+  align-items: center;
+  gap: 69px;
+  padding-left: 79px;
+  margin-bottom: 19px;
+}
+.container-text {
+  width: 376px;
+  padding-top: 88px;
+  padding-bottom: 78px;
+}
+
+.container-text__title {
+  font-size: 32px;
+  line-height: 1.34;
+  margin-bottom: 38px;
+}
+.container-text__bottom-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $btn-bg-color-grey;
+  margin-bottom: 45px;
+}
+.gallery__link {
+  background-color: $btn-bg-color-brown;
+}
+
+.gallery-page {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 454px;
+  gap: 20px;
+}
+.gallery-page__btn {
+  border: none;
+  background-color: transparent;
+}
+
+.gallery-page__number {
+  font-family: $font-family-thirty;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  color: rgba(27, 26, 23, 0.82);
+}

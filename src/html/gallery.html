@@ -1,0 +1,51 @@
+<section id="gallery" class="gallery">
+  <div class="container">
+    <h2 class="visually-hidden">Галерея</h2>
+    <div class="container-gallery">
+      <img
+        srcset="@img/gallery-banner.jpg 521w, @img/gallery-banner@2x.jpg 1042w"
+        sizes="(min-width: 1366px) 521px, 100vw"
+        src="@img/gallery-banner.jpg"
+        alt="gallery-banner"
+        width="521"
+        height="414"
+      />
+
+      <div class="container-text">
+        <h3 class="title container-text__title">Подлинное качество</h3>
+        <p class="container-text__bottom-text">
+          Все часы производятся в Швейцарии и имеют сертификаты качества.
+          Настоящие швейцарские часы — это предмет гордости и престижа.
+        </p>
+        <a href="#" class="gallery__link link-button">Смотреть каталог</a>
+      </div>
+    </div>
+    <div class="gallery-page">
+      <button
+        type="button"
+        class="gallery-page__btn button"
+        aria-label="arrow left"
+      >
+        <svg width="5" height="10">
+          <use
+            href="@img/icons/icons.svg#arrow-left"
+            class="svg-arrow-left-dims"
+          ></use>
+        </svg>
+      </button>
+      <p class="gallery-page__number">01</p>
+      <button
+        type="button"
+        class="gallery-page__btn button"
+        aria-label="arrow right"
+      >
+        <svg width="5" height="10">
+          <use
+            href="@img/icons/icons.svg#arrow-right"
+            class="svg-arrow-right-dims"
+          ></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>

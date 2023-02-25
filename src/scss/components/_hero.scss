@@ -1,0 +1,118 @@
+.hero {
+  padding-top: 138px;
+  padding-bottom: 74px;
+  padding-left: 22px;
+  color: $title-text-color;
+  background-image: url("../../img/hero.png"), url("../../img/hero_bg.png");
+  background-repeat: no-repeat;
+  background-position: top -10px left 662px, top 0 left 0;
+  background-size: 502px 804px, 1366px 768px;
+
+  @include retina {
+    background-image: url("../../img/hero@2x.png"),
+      url("../../img/hero_bg@2x.png");
+  }
+}
+
+.hero__text {
+  font-family: $font-family-thirty;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.38;
+}
+
+.hero__text--after {
+  margin-left: 485px;
+  margin-bottom: 82px;
+}
+
+.hero__text--after::after {
+  display: inline-block;
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #8b8371;
+  margin-left: 15px;
+  margin-bottom: 6px;
+}
+
+.hero__text--before {
+  margin-left: 967px;
+}
+
+.hero__text--before::before {
+  display: inline-block;
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #8b8371;
+  margin-right: 15px;
+  margin-bottom: 6px;
+}
+.title {
+  font-family: $font-family-secondary;
+  font-weight: 400;
+  color: $title-text-color;
+}
+.hero__title {
+  font-size: 45px;
+  line-height: 1.33;
+  margin-bottom: 16px;
+}
+
+.hero__title::before {
+  display: inline-block;
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #8b8371;
+  margin-right: 15px;
+  margin-bottom: 12px;
+}
+
+.hero__bottom-text {
+  font-family: $font-family-secondary;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.33;
+  margin-bottom: 39px;
+  margin-left: 65px;
+}
+
+.hero__description {
+  width: 258px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(27, 26, 23, 0.82);
+  margin-bottom: 64px;
+  margin-left: 65px;
+}
+
+.link-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 205px;
+  height: 64px;
+  color: $secondary-text-color;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: background-color $time $function-animation,
+    color $time $function-animation;
+}
+
+.hero__link {
+  background-color: $btn-bg-color-grey;
+  margin-bottom: 104px;
+  margin-left: 65px;
+}
+
+.hero__link:hover,
+.hero__link:focus {
+  background-color: $btn-bg-color-brown;
+  color: $bg-color-primary;
+}

@@ -1,21 +1,36 @@
 .header {
-  padding-top: 35px;
-  padding-bottom: 26px;
+  padding-top: 31px;
+  padding-bottom: 31px;
 }
 
 .header.container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .header__nav {
   display: flex;
   align-items: center;
+  margin-right: 278px;
 }
 
 .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-family-secondary;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.14em;
+  color: $primary-text-color;
 }
+
+.logo svg {
+  stroke: currentColor;
+}
+
 .site-nav {
   margin-left: 266px;
   display: flex;
@@ -23,21 +38,19 @@
   gap: 65px;
 }
 
-.site-nav__item {
-}
 .site-nav__link {
   font-family: inherit;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
-  color: $accent-color;
+  color: $primary-text-color;
 
   transition: color $time $function-animation;
 }
 
 .site-nav__link:hover,
 .site-nav__link :focus {
-  color: $btn-bg-color-brown;
+  color: $accent-color;
 }
 
 .icons-list {
@@ -84,11 +97,12 @@
   }
 }
 
-.icons-button .button:hover,
+.button:hover,
 .button:focus {
   color: $btn-bg-color-grey;
 
   & svg {
-    fill: inherit;
+    fill: transparent;
+    stroke: currentColor;
   }
 }
