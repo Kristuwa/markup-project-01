@@ -51,6 +51,7 @@
   }
 }
 .card__btn {
+  cursor: pointer;
   border: none;
   background-color: transparent;
   transition: color $time $function-animation;

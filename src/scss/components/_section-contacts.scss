@@ -28,6 +28,12 @@
 .text-container__link {
   font-family: inherit;
   color: #262421;
+  transition: color $time $function-animation;
+}
+
+.text-container__link:hover,
+.text-container__link:focus {
+  color: $accent-color;
 }
 
 .social-list {

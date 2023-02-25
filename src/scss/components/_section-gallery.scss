@@ -52,6 +52,11 @@
   background-color: $btn-bg-color-brown;
 }
 
+.gallery__link:hover,
+.gallery__link:focus {
+  background-color: $btn-bg-color-grey;
+}
+
 .gallery-page {
   display: flex;
   align-items: center;
