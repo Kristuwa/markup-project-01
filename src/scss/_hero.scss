@@ -3,14 +3,13 @@
   padding-bottom: 74px;
   padding-left: 22px;
   color: $title-text-color;
-  background-image: url("../../img/hero.png"), url("../../img/hero_bg.png");
+  background-image: url("@img/hero.png"), url("@img/hero_bg.png");
   background-repeat: no-repeat;
   background-position: top -10px left 662px, top 0 left 0;
   background-size: 502px 804px, 1366px 768px;
 
   @include retina {
-    background-image: url("../../img/hero@2x.png"),
-      url("../../img/hero_bg@2x.png");
+    background-image: url("@img/hero@2x.png"), url("@img/hero_bg@2x.png");
   }
 }
 

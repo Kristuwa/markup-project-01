@@ -40,14 +40,14 @@
 }
 .card__img {
   background-color: $bg-card-color;
-  background-image: url("../../img/Ellipse.png");
+  background-image: url("@img/Ellipse.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   margin-bottom: 19px;
 
   @include retina {
-    background-image: url("../../img/Ellipse@2x.png");
+    background-image: url("@img/Ellipse@2x.png");
   }
 }
 .card__btn {

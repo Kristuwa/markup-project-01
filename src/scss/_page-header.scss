@@ -89,12 +89,9 @@
   height: 13px;
   background-color: $btn-bg-color-brown;
   border-radius: 6.5px;
-
-  &__text {
-    font-weight: 400;
-    font-size: 8px;
-    line-height: 1.125;
-  }
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.125;
 }
 
 .button:hover,
