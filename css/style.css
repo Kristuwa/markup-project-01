@@ -221,8 +221,6 @@ a {
   height: 13px;
   background-color: #d4b098;
   border-radius: 6.5px;
-}
-.counter__text {
   font-weight: 400;
   font-size: 8px;
   line-height: 1.125;
@@ -243,14 +241,14 @@ a {
   padding-bottom: 74px;
   padding-left: 22px;
   color: #1b1a17;
-  background-image: url("../../img/hero.png"), url("../../img/hero_bg.png");
+  background-image: url("@img/hero.png"), url("@img/hero_bg.png");
   background-repeat: no-repeat;
   background-position: top -10px left 662px, top 0 left 0;
   background-size: 502px 804px, 1366px 768px;
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../../img/hero@2x.png"), url("../../img/hero_bg@2x.png");
+    background-image: url("@img/hero@2x.png"), url("@img/hero_bg@2x.png");
   }
 }
 
@@ -401,7 +399,7 @@ a {
 
 .card__img {
   background-color: #fdfdfb;
-  background-image: url("../../img/Ellipse.png");
+  background-image: url("@img/Ellipse.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -409,7 +407,7 @@ a {
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .card__img {
-    background-image: url("../../img/Ellipse@2x.png");
+    background-image: url("@img/Ellipse@2x.png");
   }
 }
 
@@ -458,14 +456,14 @@ a {
 .gallery {
   padding-top: 52px;
   padding-bottom: 21px;
-  background-image: url("../../img/lines_banner.png"), linear-gradient(to right, #f7f5ef 34%, #fdfdfb 34%, #fdfdfb 56%);
+  background-image: url("@img/lines_banner.png"), linear-gradient(to right, #f7f5ef 34%, #fdfdfb 34%, #fdfdfb 56%);
   background-color: #d4b098;
   background-repeat: no-repeat;
   background-position: top 0 right 0;
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .gallery {
-    background-image: url("../../img/lines_banner@2x.png"), linear-gradient(to right, #f7f5ef 34%, #fdfdfb 34%, #fdfdfb 56%);
+    background-image: url("@img/lines_banner@2x.png"), linear-gradient(to right, #f7f5ef 34%, #fdfdfb 34%, #fdfdfb 56%);
   }
 }
 
