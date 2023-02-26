@@ -53,7 +53,7 @@ gulp.task("deploy", function () {
   return gulp.src("./dist/**/*").pipe(
     deploy({
       remoteUrl: "https://github.com/Kristuwa/markup-project-01.git",
-      branch: "main",
+      branch: "gh-pages",
     })
   );
 });
