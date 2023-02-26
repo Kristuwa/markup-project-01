@@ -4,15 +4,22 @@
 }
 
 .header.container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  @include tablet {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
 }
 
 .header__nav {
-  display: flex;
-  align-items: center;
-  margin-right: 278px;
+  @include tablet {
+    display: flex;
+    align-items: center;
+    margin-right: 78px;
+  }
+  @include desktop {
+    margin-right: 278px;
+  }
 }
 
 .logo {
@@ -25,6 +32,10 @@
   line-height: 1.33;
   letter-spacing: 0.14em;
   color: $primary-text-color;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 10px;
+  }
 }
 
 .logo svg {
@@ -32,10 +43,29 @@
 }
 
 .site-nav {
-  margin-left: 266px;
-  display: flex;
-  align-items: center;
-  gap: 65px;
+  text-align: center;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 10px;
+  }
+
+  @include tablet {
+    margin-left: 86px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+  }
+
+  @include desktop {
+    margin-left: 266px;
+    gap: 65px;
+  }
+}
+
+.site-nav__item + .site-nav__item {
+  @media screen and (max-width: 767px) {
+    margin-top: 5px;
+  }
 }
 
 .site-nav__link {
@@ -57,6 +87,10 @@
   display: flex;
   align-items: center;
   gap: 23px;
+  justify-content: center;
+  @include tablet {
+    justify-content: flex-start;
+  }
 }
 
 .button {

@@ -1,28 +1,60 @@
 .hero {
-  padding-top: 138px;
-  padding-bottom: 74px;
-  padding-left: 22px;
+  padding-top: 48px;
+  padding-bottom: 28px;
+
   color: $title-text-color;
   background-image: url("../img/hero.png"), url("../img/hero_bg.png");
   background-repeat: no-repeat;
-  background-position: top -10px left 662px, top 0 left 0;
-  background-size: 502px 804px, 1366px 768px;
+  background-position: top 0 right 0, top 0 right -40px;
+  background-size: 100px 270px, 320px 270px;
 
   @include retina {
     background-image: url("../img/hero@2x.png"), url("../img/hero_bg@2x.png");
   }
+
+  @include tablet {
+    padding-top: 138px;
+    padding-bottom: 74px;
+    background-size: 452px 768px, 768px 768px;
+    background-position: top -10px right -50px, top 0 right -70px;
+  }
+  @include desktop {
+    padding-left: 22px;
+    background-size: 502px 804px, 1366px 768px;
+    background-position: top -10px left 662px, top 0 left 0;
+  }
 }
 
 .hero__text {
-  font-family: $font-family-thirty;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.38;
+  display: none;
+
+  @include tablet {
+    display: block;
+    font-family: $font-family-thirty;
+    font-weight: 400;
+    line-height: 1.38;
+    font-size: 14px;
+  }
+
+  @include desktop {
+    font-size: 16px;
+  }
 }
 
 .hero__text--after {
-  margin-left: 485px;
-  margin-bottom: 82px;
+  @include tablet {
+    margin-left: calc(100% - 405px);
+    margin-bottom: 62px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-left: calc(100% - 305px);
+  }
+
+  @include desktop {
+    margin-left: 485px;
+    margin-bottom: 82px;
+  }
 }
 
 .hero__text--after::after {
@@ -36,7 +68,11 @@
 }
 
 .hero__text--before {
-  margin-left: 967px;
+  margin-left: 507px;
+
+  @include desktop {
+    margin-left: 967px;
+  }
 }
 
 .hero__text--before::before {
@@ -53,61 +89,100 @@
   font-weight: 400;
   color: $title-text-color;
 }
+
 .hero__title {
-  font-size: 45px;
+  font-size: 24px;
   line-height: 1.33;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
+
+  @include tablet {
+    font-size: 45px;
+    margin-bottom: 16px;
+  }
 }
 
 .hero__title::before {
   display: inline-block;
   content: "";
-  width: 50px;
+  width: 30px;
   height: 1px;
   background-color: #8b8371;
   margin-right: 15px;
   margin-bottom: 12px;
+
+  @include tablet {
+    width: 50px;
+  }
 }
 
 .hero__bottom-text {
   font-family: $font-family-secondary;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 1.33;
-  margin-bottom: 39px;
-  margin-left: 65px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+
+  @include tablet {
+    font-size: 30px;
+    margin-bottom: 39px;
+    margin-left: 65px;
+  }
 }
 
 .hero__description {
-  width: 258px;
+  width: 148px;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.5;
   color: rgba(27, 26, 23, 0.82);
-  margin-bottom: 64px;
-  margin-left: 65px;
+  margin-bottom: 34px;
+  margin-left: 40px;
+
+  @include tablet {
+    width: 258px;
+    font-size: 14px;
+    margin-left: 65px;
+    margin-bottom: 64px;
+  }
 }
 
 .link-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 205px;
-  height: 64px;
+  width: 150px;
+  height: 40px;
   color: $secondary-text-color;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.17;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   transition: background-color $time $function-animation,
     color $time $function-animation;
+
+  @include tablet {
+    font-size: 12px;
+    width: 205px;
+    height: 64px;
+  }
 }
 
 .hero__link {
   background-color: $btn-bg-color-grey;
-  margin-bottom: 104px;
-  margin-left: 65px;
+  margin-bottom: 54px;
+  margin-left: 40px;
+
+  @include tablet {
+    margin-bottom: 204px;
+    margin-left: 65px;
+  }
+
+  @include desktop {
+    margin-bottom: 104px;
+    margin-left: 65px;
+  }
 }
 
 .hero__link:hover,

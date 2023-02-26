@@ -1,26 +1,58 @@
 .collection {
-  padding-top: 74px;
-  padding-bottom: 86px;
+  padding-top: 34px;
+  padding-bottom: 36px;
+  @include tablet {
+    padding-top: 34px;
+    padding-bottom: 46px;
+  }
+  @include desktop {
+    padding-top: 74px;
+    padding-bottom: 86px;
+  }
 }
 
 .collection__title {
   text-align: center;
-  font-size: 32px;
+  font-size: 24px;
   line-height: 1.34;
-  margin-bottom: 52px;
+  margin-bottom: 26px;
+  @include tablet {
+    font-size: 32px;
+    margin-bottom: 52px;
+  }
 }
 
 .collection-list {
   display: flex;
   align-items: center;
-  gap: 34px;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  @include tablet {
+    gap: 20px;
+    justify-content: center;
+  }
+
+  @include desktop {
+    justify-content: flex-start;
+    gap: 26px;
+  }
 }
 
 .card {
-  padding: 40px 28px;
-  width: 370px;
-
+  width: 290px;
+  padding: 15px 10px;
   background-color: $bg-card-color;
+
+  @include tablet {
+    padding: 20px 28px;
+    width: 340px;
+  }
+
+  @include desktop {
+    padding: 40px 28px;
+    width: 370px;
+  }
 }
 .card__title {
   font-family: $font-family-secondary;
@@ -39,17 +71,28 @@
   color: rgba(27, 26, 23, 0.82);
 }
 .card__img {
+  @media screen and (max-width: 474px) {
+    width: 270px;
+  }
   background-color: $bg-card-color;
-  background-image: url("@img/Ellipse.png");
+  background-image: url("../img/Ellipse.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   margin-bottom: 19px;
 
   @include retina {
-    background-image: url("@img/Ellipse@2x.png");
+    background-image: url("../img/Ellipse@2x.png");
   }
 }
+
+.card__img img {
+  @media screen and (max-width: 474px) {
+    width: 270px;
+    height: 270px;
+  }
+}
+
 .card__btn {
   cursor: pointer;
   border: none;
