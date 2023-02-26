@@ -2,14 +2,22 @@
   <div class="container">
     <h2 class="visually-hidden">Галерея</h2>
     <div class="container-gallery">
-      <img
-        srcset="@img/gallery-banner.jpg 521w, @img/gallery-banner@2x.jpg 1042w"
-        sizes="(min-width: 1366px) 521px, 100vw"
-        src="@img/gallery-banner.jpg"
-        alt="gallery-banner"
-        width="521"
-        height="414"
-      />
+      <picture>
+        <source
+          srcset="@img/gallery-banner.webp 1x, @img/gallery-banner@2x.webp 2x"
+          type="image/webp"
+        />
+        <source
+          srcset="@img/gallery-banner.jpg 1x, @img/gallery-banner@2x.jpg 2x"
+          type="image/jpg"
+        />
+        <img
+          src="@img/gallery-banner.jpg"
+          alt="gallery-banner"
+          width="521"
+          height="414"
+        />
+      </picture>
 
       <div class="container-text">
         <h3 class="title container-text__title">Подлинное качество</h3>

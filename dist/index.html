@@ -6,7 +6,7 @@
   <meta name="description" content="Free Web tutorials" />
   <meta name="keywords" content="HTML, SCSS" />
   <meta name="author" content="Kristi Krasovska" />
-  <link rel="stylesheet" href="./css/style.min.css" />
+  <link rel="stylesheet" href="./css/style.min.css?_v=20230226150941" />
   <title>Камины</title>
 </head>
 
@@ -82,14 +82,22 @@
           <p class="card__title">RADO</p>
           <p class="card__price">65 300 &#8381;</p>
           <div class="card__img">
-            <img
-              srcset="img/watch-01.png 313w, img/watch-01@2x.png 626w"
-              sizes="(min-width: 1366px) 313px, 100vw"
-              src="img/watch-01.png"
-              alt="watch model rada"
-              width="313"
-              height="313"
-            />
+            <picture>
+              <source
+                srcset="img/watch-01.webp 1x, img/watch-01@2x.webp 2x"
+                type="image/webp"
+              />
+              <source
+                srcset="img/watch-01.png 1x, img/watch-01@2x.png 2x"
+                type="image/png"
+              />
+              <img
+                src="img/watch-01.png"
+                alt="watch model BVLGARI"
+                width="313"
+                height="313"
+              />
+            </picture>
           </div>
           <button type="button" class="card__btn">
             <span class="btn-text">Подробнее</span>
@@ -101,14 +109,22 @@
           <p class="card__title">BVLGARI</p>
           <p class="card__price">81 700 &#8381;</p>
           <div class="card__img">
-            <img
-              srcset="img/watch-02.png 313w, img/watch-02@2x.png 626w"
-              sizes="(min-width: 1366px) 313px, 100vw"
-              src="img/watch-02.png"
-              alt="watch model BVLGARI"
-              width="313"
-              height="313"
-            />
+            <picture>
+              <source
+                srcset="img/watch-02.webp 1x, img/watch-02@2x.webp 2x"
+                type="image/webp"
+              />
+              <source
+                srcset="img/watch-02.png 1x, img/watch-02@2x.png"
+                type="image/png"
+              />
+              <img
+                src="img/watch-02.png"
+                alt="watch model BVLGARI"
+                width="313"
+                height="313"
+              />
+            </picture>
           </div>
           <button type="button" class="card__btn">
             <span class="btn-text">Подробнее</span>
@@ -120,14 +136,22 @@
           <p class="card__title">BVLGARI</p>
           <p class="card__price">72 700 &#8381;</p>
           <div class="card__img">
-            <img
-              srcset="img/watch-03.png 313w, img/watch-03@2x.png 626w"
-              sizes="(min-width: 1366px) 313px, 100vw"
-              src="img/watch-03.png"
-              alt="watch model BVLGARI"
-              width="313"
-              height="313"
-            />
+            <picture>
+              <source
+                srcset="img/watch-03.webp 1x, img/watch-03@2x.webp 2x"
+                type="image/webp"
+              />
+              <source
+                srcset="img/watch-03.png 1x, img/watch-03@2x.png"
+                type="image/png"
+              />
+              <img
+                src="img/watch-03.png"
+                alt="watch model BVLGARI"
+                width="313"
+                height="313"
+              />
+            </picture>
           </div>
           <button type="button" class="card__btn">
             <span class="btn-text">Подробнее</span>
@@ -142,14 +166,22 @@
   <div class="container">
     <h2 class="visually-hidden">Галерея</h2>
     <div class="container-gallery">
-      <img
-        srcset="img/gallery-banner.jpg 521w, img/gallery-banner@2x.jpg 1042w"
-        sizes="(min-width: 1366px) 521px, 100vw"
-        src="img/gallery-banner.jpg"
-        alt="gallery-banner"
-        width="521"
-        height="414"
-      />
+      <picture>
+        <source
+          srcset="img/gallery-banner.webp 1x, img/gallery-banner@2x.webp 2x"
+          type="image/webp"
+        />
+        <source
+          srcset="img/gallery-banner.jpg 1x, img/gallery-banner@2x.jpg 2x"
+          type="image/jpg"
+        />
+        <img
+          src="img/gallery-banner.jpg"
+          alt="gallery-banner"
+          width="521"
+          height="414"
+        />
+      </picture>
 
       <div class="container-text">
         <h3 class="title container-text__title">Подлинное качество</h3>
@@ -255,35 +287,58 @@
     </div>
     <div class="img-gallery">
       <div class="img-gallery__block">
-        <img
-          srcset="img/photo-01.jpg 242w, img/photo-01@2x.jpg 484w"
-          sizes="(min-width: 1366px) 242px, 100vw"
-          src="img/photo-01.jpg"
-          alt="photo watch"
-          width="242"
-          height="228"
-          class="img-gallery__img img-gallery__img--margin-bottom"
-        />
-        <img
-          class="img-gallery__img"
-          srcset="img/photo-02.jpg 242w, img/photo-02@2x.jpg 484w"
-          sizes="(min-width: 1366px) 242px, 100vw"
-          src="img/photo-02.jpg"
-          alt="photo watch"
-          width="242"
-          height="228"
-        />
+        <picture>
+          <source
+            srcset="img/photo-01.webp 1x, img/photo-01@2x.webp 2x"
+            type="image/webp"
+          />
+          <source
+            srcset="img/photo-01.jpg 1x, img/photo-01@2x.jpg 2x"
+            type="image/jpg"
+          />
+          <img
+            src="img/photo-01.jpg"
+            alt="photo watch"
+            width="242"
+            height="228"
+            class="img-gallery__img--margin-bottom img-gallery__img"
+          />
+        </picture>
+        <picture>
+          <source
+            srcset="img/photo-02.webp 1x, img/photo-02@2x.webp 2x"
+            type="image/webp"
+          />
+          <source
+            srcset="img/photo-02.jpg 1x, img/photo-02@2x.jpg 2x"
+            type="image/jpg"
+          />
+          <img
+            src="img/photo-02.jpg"
+            alt="photo watch"
+            width="242"
+            height="228"
+            class="img-gallery__img"
+          />
+        </picture>
       </div>
-
-      <img
-        srcset="img/photo-03.jpg 377w, img/photo-03@2x.jpg 754w"
-        sizes="(min-width: 1366px) 377px, 100vw"
-        src="img/photo-03.jpg"
-        alt="photo watch"
-        width="377"
-        height="460"
-        class="img-gallery__img--big img-gallery__img"
-      />
+      <picture>
+        <source
+          srcset="img/photo-03.webp 1x, img/photo-03@2x.webp 2x"
+          type="image/webp"
+        />
+        <source
+          srcset="img/photo-03.jpg 1x, img/photo-03@2x.jpg 2x"
+          type="image/jpg"
+        />
+        <img
+          src="img/photo-03.jpg"
+          alt="photo watch"
+          width="377"
+          height="460"
+          class="img-gallery__img--big img-gallery__img"
+        />
+      </picture>
     </div>
   </div>
 </section>
@@ -433,6 +488,6 @@
   </div>
 </footer>
 
-    <script src="@js/app.js"></script>
+    <script src="./js/app.js?_v=20230226150941"></script>
   </body>
 </html>

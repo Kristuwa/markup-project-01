@@ -1,7 +1,47 @@
+.no-webp .gallery {
+  background-image: url("../img/lines_banner.png"),
+    linear-gradient(
+      to right,
+      $bg-color-primary 34%,
+      $bg-color-secondary 34%,
+      $bg-color-secondary 56%
+    );
+
+  @include retina {
+    background-image: url("../img/lines_banner@2x.png"),
+      linear-gradient(
+        to right,
+        $bg-color-primary 34%,
+        $bg-color-secondary 34%,
+        $bg-color-secondary 56%
+      );
+  }
+}
+
+.webp .gallery {
+  background-image: url("../img/lines_banner.webp"),
+    linear-gradient(
+      to right,
+      $bg-color-primary 34%,
+      $bg-color-secondary 34%,
+      $bg-color-secondary 56%
+    );
+
+  @include retina {
+    background-image: url("../img/lines_banner@2x.webp"),
+      linear-gradient(
+        to right,
+        $bg-color-primary 34%,
+        $bg-color-secondary 34%,
+        $bg-color-secondary 56%
+      );
+  }
+}
+
 .gallery {
   padding-top: 21px;
   padding-bottom: 21px;
-  background-image: url("../img/lines_banner.png"),
+  background-image: url("../img/lines_banner.webp"),
     linear-gradient(
       to right,
       $bg-color-primary 34%,
@@ -13,7 +53,7 @@
   background-position: top 0 right 0;
 
   @include retina {
-    background-image: url("../img/lines_banner@2x.png"),
+    background-image: url("../img/lines_banner@2x.webp"),
       linear-gradient(
         to right,
         $bg-color-primary 34%,

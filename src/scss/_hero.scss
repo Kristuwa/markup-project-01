@@ -1,15 +1,28 @@
+.no-webp .hero {
+  background-image: url("../img/hero.png"), url("../img/hero_bg.png");
+  @include retina {
+    background-image: url("../img/hero@2x.png"), url("../img/hero_bg@2x.png");
+  }
+}
+
+.webp .hero {
+  background-image: url("../img/hero.webp"), url("../img/hero_bg.webp");
+  @include retina {
+    background-image: url("../img/hero@2x.webp"), url("../img/hero_bg@2x.webp");
+  }
+}
+
 .hero {
   padding-top: 48px;
   padding-bottom: 28px;
-
   color: $title-text-color;
-  background-image: url("../img/hero.png"), url("../img/hero_bg.png");
+  background-image: url("../img/hero.webp"), url("../img/hero_bg.webp");
   background-repeat: no-repeat;
   background-position: top 0 right 0, top 0 right -40px;
   background-size: 100px 270px, 320px 270px;
 
   @include retina {
-    background-image: url("../img/hero@2x.png"), url("../img/hero_bg@2x.png");
+    background-image: url("../img/hero@2x.webp"), url("../img/hero_bg@2x.webp");
   }
 
   @include tablet {
@@ -18,6 +31,7 @@
     background-size: 452px 768px, 768px 768px;
     background-position: top -10px right -50px, top 0 right -70px;
   }
+
   @include desktop {
     padding-left: 22px;
     background-size: 502px 804px, 1366px 768px;

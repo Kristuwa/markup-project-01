@@ -70,19 +70,35 @@
 
   color: rgba(27, 26, 23, 0.82);
 }
+
+.no-webp .card__img {
+  background-image: url("../img/Ellipse.png");
+  @include retina {
+    background-image: url("../img/Ellipse@2x.png");
+  }
+}
+
+.webp .card__img {
+  background-image: url("../img/Ellipse.webp");
+
+  @include retina {
+    background-image: url("../img/Ellipse@2x.webp");
+  }
+}
+
 .card__img {
   @media screen and (max-width: 474px) {
     width: 270px;
   }
   background-color: $bg-card-color;
-  background-image: url("../img/Ellipse.png");
+  background-image: url("../img/Ellipse.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   margin-bottom: 19px;
 
   @include retina {
-    background-image: url("../img/Ellipse@2x.png");
+    background-image: url("../img/Ellipse@2x.webp");
   }
 }
 
