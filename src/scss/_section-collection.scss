@@ -1,0 +1,152 @@
+.collection {
+  padding-top: 34px;
+  padding-bottom: 36px;
+  @include tablet {
+    padding-top: 34px;
+    padding-bottom: 46px;
+  }
+  @include desktop {
+    padding-top: 74px;
+    padding-bottom: 86px;
+  }
+}
+
+.collection__title {
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.34;
+  margin-bottom: 26px;
+  @include tablet {
+    font-size: 32px;
+    margin-bottom: 52px;
+  }
+}
+
+.collection-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  @include tablet {
+    gap: 20px;
+    justify-content: center;
+  }
+
+  @include desktop {
+    justify-content: flex-start;
+    gap: 26px;
+  }
+}
+
+.card {
+  width: 290px;
+  padding: 15px 10px;
+  background-color: $bg-card-color;
+
+  @include tablet {
+    padding: 20px 28px;
+    width: 340px;
+  }
+
+  @include desktop {
+    padding: 40px 28px;
+    width: 370px;
+  }
+}
+.card__title {
+  font-family: $font-family-secondary;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.card__price {
+  font-family: $font-family-thirty;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+
+  color: rgba(27, 26, 23, 0.82);
+}
+
+.no-webp .card__img {
+  background-image: url("../img/Ellipse.png");
+  @include retina {
+    background-image: url("../img/Ellipse@2x.png");
+  }
+}
+
+.webp .card__img {
+  background-image: url("../img/Ellipse.webp");
+
+  @include retina {
+    background-image: url("../img/Ellipse@2x.webp");
+  }
+}
+
+.card__img {
+  @media screen and (max-width: 474px) {
+    width: 270px;
+  }
+  background-color: $bg-card-color;
+  background-image: url("../img/Ellipse.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-bottom: 19px;
+
+  @include retina {
+    background-image: url("../img/Ellipse@2x.webp");
+  }
+}
+
+.card__img img {
+  @media screen and (max-width: 474px) {
+    width: 270px;
+    height: 270px;
+  }
+}
+
+.card__btn {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  transition: color $time $function-animation;
+}
+
+.card__btn:hover,
+.card__btn:focus {
+  color: $btn-bg-color-brown;
+}
+
+.btn-text {
+  font-family: $font-family-secondary;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: $title-text-color;
+  transition: color $time $function-animation;
+}
+
+.card__btn:hover .btn-text,
+.card__btn:focus .btn-text {
+  color: $btn-bg-color-brown;
+}
+
+.btn-text::before {
+  display: inline-block;
+  content: "";
+  width: 30px;
+  height: 1px;
+  background-color: #8b8371;
+  margin-right: 18px;
+  margin-bottom: 5px;
+  transition: background-color $time $function-animation;
+}
+
+.card__btn:hover .btn-text::before,
+.card__btn:focus .btn-text::before {
+  background-color: $btn-bg-color-brown;
+}
